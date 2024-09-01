@@ -1,6 +1,6 @@
 @font-face {
     font-family: myfont;
-    src: url(beda.otf);
+    src: url(black.otf);
 }
 * {
     margin: 0;
@@ -8,45 +8,44 @@
     font-family: serif;
     box-sizing: border-box;
 }
-:root{
-    --primary-color:rgb(13, 13, 13);
-    --secondary-color: rgb(255, 255, 255);
-    --background-image: url(gali.jpg); 
-   
-}
-.dark-theme{
-    --primary-color:rgb(250, 248, 248);
-    --secondary-color: rgb(96, 94, 94);
-    --background-image: url(back.jpg);
-}
+
 html{
-    scroll-behavior: smooth;
+   scroll-behavior:smooth;
 }
 .left h1 {
     font-family: myfont;
     font-size: 30px;
-    color: var(--primary-color);
+    color:whitesmoke;
 }
+
 body {
-    background: url(gali.jpg) no-repeat center center fixed;
+    /* padding-top: 10px; */
+    background: url(design.jpg) no-repeat center center fixed;
     background-size: cover;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
     overflow-y: auto;
 }
+
 .container {
     padding: 10px 10%;
 }
+
 nav {
     display: flex;
-    top: 0;
+    top: 10;
     justify-content: space-between;
+    position: fixed; 
+    width: 80%; 
+    z-index: 1000; 
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(2.5px);
     border-radius: 20px;
-    box-shadow: 0px 0px 20px var(--primary-color);
+    box-shadow: 0px 0px 20px grey;
+    ;
 }
+
 nav ul{
     flex:1;
     text-align: right;
@@ -58,7 +57,7 @@ nav ul li {
     margin: 10px 20px;
 }
 nav ul li a {
-    color: var(--primary-color);
+    color: whitesmoke;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 18px;
@@ -68,7 +67,7 @@ nav ul li a::after {
     content: "";
     width: 0%;
     height: 3px;
-    background:var(--primary-color);
+    background:whitesmoke;
     position: absolute;
     bottom: -6px;
     left: 0;
@@ -87,51 +86,51 @@ nav ul li a:hover::after {
 }
 .header-text p {
     font-size: 30px;
-    margin: 20px;
-    color:var(--primary-color);
+    margin: 15px;
+    color:whitesmoke;
 }
 .header-text h1 {
     display: block;
+    color: whitesmoke;
     justify-content: space-between;
     align-items: center;
     flex-wrap: flex;
     padding: 10px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(2.5px);
     width: 65%;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px var(--primary-color);
-    color:var(--primary-color);
+    box-shadow: 0px 0px 20px grey;
 }
 .btn.btn2{
     display: inline-block;
-    background: var(--secondary-color);
 }
 .btn2{
     text-decoration: none;
-    color: var(--primary-color);
+    color: whitesmoke;
     padding: 15px 60px;
     font-size: 18px;
     margin-top: 20px;
     margin:30px 0px ;
     cursor: pointer;
+    backdrop-filter: blur(2.5px);
     border-radius: 20px;
-    box-shadow: 0px 0px 30px var(--primary-color);
+    box-shadow: 0px 0px 30px grey;
    
 }
-.btn.btn4{
+.btn.btn3{
     display: inline-block;
-    background: var(--secondary-color);
 }
-.btn4{
+.btn3{
     text-decoration: none;
-    color:var(--primary-color);
+    color:whitesmoke;
     padding: 15px 60px;
     font-size: 18px;
     margin-top: 20px;
     margin:30px 20px ;
     cursor: pointer;
+    backdrop-filter: blur(2.5px);
     border-radius: 20px;
-    box-shadow: 0px 0px 30px var(--primary-color);
+    box-shadow: 0px 0px 30px grey;
 }
 
 /*------about*/
@@ -154,9 +153,9 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 #about-col-1 img {
-    width: 75%;
+    width: 85%;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px var(--primary-color);
+    box-shadow: 0px 0px 20px grey;
 }
 
 #about-col-2{
@@ -166,17 +165,17 @@ nav ul li a:hover::after {
     align-items: center;
     flex-wrap: flex;
     padding: 10px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(2.5px);
     border-radius: 20px;
-    box-shadow: 0px 0px 20px var(--primary-color);
+    box-shadow: 0px 0px 20px grey;
 }
 .subtitle{
     font-size: 60px;
     font-weight: 600;
-    color: var(--primary-color);
+    color: whitesmoke;
 }
  p{
-    color: var(--primary-color);
+    color: whitesmoke;
     font-size: 22.5px;
 }
 .tab-titles{
@@ -186,7 +185,7 @@ nav ul li a:hover::after {
 .tab-links{
     margin-right: 50px;
     font-size: 18px;
-    color:var(--primary-color);
+    color:whitesmoke;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -195,7 +194,7 @@ nav ul li a:hover::after {
     content: "";
     width: 0%;
     height: 3px;
-    background:var(--primary-color);
+    background:whitesmoke;
     position: absolute;
     bottom: -6px;
     left: 0;
@@ -207,9 +206,10 @@ nav ul li a:hover::after {
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    color: whitesmoke;
 }
 .tab-contents ul li span{
-    color:var(--primary-color);
+    color:whitesmoke;
     font-size: 20px;
 }
 .tab-contents{
@@ -232,25 +232,26 @@ nav ul li a:hover::after {
 }
 .services-list div{
     border-radius: 20px;
-    box-shadow: 0px 0px 30px var(--primary-color);
+    box-shadow: 0px 0px 30px grey;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    backdrop-filter: blur(50px);
-    transition: background 0.5s, transform 1s;
+    backdrop-filter: blur(2.5px);
+    transition: background 0.5s, transform 0.1s;
 }
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+    color: whitesmoke;
 }
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
-    color:var(--primary-color);
+    color:whitesmoke;
 }
 .services-list div:hover{
-    background: var(--secondary-color);
+    background: black;
     transform: translateY(-10px);
 }
 /* portfolio */
@@ -274,9 +275,9 @@ nav ul li a:hover::after {
 .work img{
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px var(--primary-color);
+    box-shadow: 0px 0px 30px grey;
     display: block;
-    transition: transform 1s;
+    transition: transform 5s;
     
 }
 .layer {
@@ -338,48 +339,51 @@ nav ul li a:hover::after {
 }
 .social-icons a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: whitesmoke;
     font-size: 30px;
     margin-right: 15px;
     display: inline-block;
-    transition: transform 1s;
+    transition: transform 0.1s;
 }
 .social-icons a:hover{
     transform: translateY(-5px);
 
 }
-.btn.btn3{
+.btn.btn4{
     display: inline-block;
-    background: var(--secondary-color);
+    background: whitesmoke;
+    
 
 }
 .contact-right form{
     width: 100%;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(2.5px);
     border-radius: 20px;
-    box-shadow: 0px 0px 30px var(--primary-color);
+    box-shadow: 0px 0px 30px grey;
 }
 form input, form textarea{
     width: 80%;
     border: 0;
     outline: none;
-    background: var(--secondary-color);
+    /* background: var(--secondary-color); */
     padding: 15px;
     margin: 15px 75px;
     color: var(--primary-color);
     font-size: 18px;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px var(--primary-color);
+    backdrop-filter: blur(2.5px);
+    box-shadow: 0px 0px 30px grey;
     
 }
-.btn3{
+.btn4{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     margin:15px 75px ;
     cursor: pointer;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px var(--primary-color);
+    backdrop-filter: blur(2.5px);
+    box-shadow: 0px 0px 30px grey;
 }
 
 .copyright{
@@ -389,29 +393,113 @@ form input, form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
-/* css for small screens */
-/* nav .fa-solid{ */
-    /* display: none; */
-/* } */
-@media only screen and (max-width:600px){
-    .header-text{
-        margin-top: 100%;
-        font-size: 35px;
-        width: 230%
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+    .container, .container2, #services, #my-work {
+        padding: 40px 5%;
     }
-    nav .fa-solid{
-        display: block;
-        font-size: 25px;
+
+    .row {
+        flex-direction: column;
     }
-    nav ul{
-        background: #bc14e6;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
     }
-   
-    
+
+    .services-list, .worklist {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .tab-links {
+        margin-right: 30px;
+    }
+
+    .tab-contents ul li {
+        font-size: 18px;
+    }
 }
+/* for small screens */
+@media only screen and (max-width: 767px) {
+    nav {
+        width: 100%;
+        position: static; /* Remove fixed positioning for small screens */
+        backdrop-filter: none; /* Remove backdrop blur for smaller screens */
+        box-shadow: none; /* Remove shadow for smaller screens */
+    }
+
+    .header-text {
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 5px 0px;
+        font-size: 12px;
+    }
+
+    .container, .container2, #services, #my-work {
+        padding: 20px 5%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    #about-col-1, #about-col-2 {
+        flex-basis: 100%;
+    }
+
+    #about-col-1 img {
+        width: 100%;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-links {
+        margin: 10px 0;
+    }
+
+    .tab-contents ul li {
+        font-size: 16px;
+    }
+
+    .services-list, .worklist {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .social-icons a {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .contact-right form {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        width: calc(100% - 30px); /* Adjust width for mobile */
+        margin: 10px;
+    }
+
+    .btn4 {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+
